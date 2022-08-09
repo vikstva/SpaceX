@@ -91,6 +91,7 @@ body {
   margin-left: 20px;
   transition: 0.3s;
   cursor: pointer;
+  border-bottom: solid transparent 1px;
 }
 
 .header__menu--item:hover {
@@ -153,11 +154,11 @@ body {
   grid-template-columns: repeat(2, 1fr);
   position: absolute;
   top: 26%;
-  left: 62%;
+  left: 60%;
   margin-right: 20%;
   line-height: 1.5vw;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  grid-column-gap: 7px;
+  grid-row-gap: 7px;
   color: #ffffffc4;
 }
 
@@ -166,62 +167,63 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   padding: 10px;
+  border: solid 1px transparent;
 }
 
 .page__grid--1 {
-  background-image: linear-gradient(to top left, #ffffff14, #ffffff00, transparent);
+  background-image: linear-gradient(to top left, #ffffff0d, #ffffff00, transparent);
   transition: 0.3s;
+  border-top: none;
+  border-left: none;
 }
 
 .page__grid--1:hover {
-  border: solid 1px;
   border-image: linear-gradient(to left top, #ffffff3d 10%, transparent 50%);
   border-image-slice: 1;
   cursor: pointer;
-  border-top: none;
-  border-left: none;
+  background-image: linear-gradient(to top left, #ffffff1a, #ffffff00, transparent);
 }
 
 .page__grid--2 { 
-  background-image: linear-gradient(to top right, #ffffff14, #ffffff00, transparent);
+  background-image: linear-gradient(to top right, #ffffff0d, #ffffff00, transparent);
   transition: 0.3s;
-}
-
-.page__grid--2:hover {
-  border: solid 1px;
-  border-image: linear-gradient(to right top, #ffffff3d 10%, transparent 50%);
-  border-image-slice: 1;
-  cursor: pointer;
   border-top: none;
   border-right: none;
 }
 
-.page__grid--3 {
-  background-image: linear-gradient(to bottom left, #ffffff14, #ffffff00, transparent);
-  transition: 0.3s;
-}
-
-.page__grid--3:hover {
-  border: solid 1px;
-  border-image: linear-gradient(to left bottom, #ffffff3d 10%, transparent 50%);
+.page__grid--2:hover {
+  border-image: linear-gradient(to right top, #ffffff3d 10%, transparent 50%);
   border-image-slice: 1;
   cursor: pointer;
+  background-image: linear-gradient(to top right, #ffffff1a, #ffffff00, transparent);
+}
+
+.page__grid--3 {
+  background-image: linear-gradient(to bottom left, #ffffff0d, #ffffff00, transparent);
+  transition: 0.3s;
   border-bottom: none;
   border-left: none;
 }
 
+.page__grid--3:hover {
+  border-image: linear-gradient(to left bottom, #ffffff3d 10%, transparent 50%);
+  border-image-slice: 1;
+  cursor: pointer;
+  background-image: linear-gradient(to bottom left, #ffffff1a, #ffffff00, transparent);
+}
+
 .page__grid--4 {
-  background-image: linear-gradient(to bottom right, #ffffff14, #ffffff00, transparent);
+  background-image: linear-gradient(to bottom right, #ffffff0d, #ffffff00, transparent);
   transition: 0.3s;
+  border-bottom: none;
+  border-right: none;
 }
 
 .page__grid--4:hover {
-  border: solid 1px;
   border-image: linear-gradient(to right bottom, #ffffff3d 10%, transparent 50%);
   border-image-slice: 1;
   cursor: pointer;
-  border-bottom: none;
-  border-right: none;
+  background-image: linear-gradient(to bottom right, #ffffff1a, #ffffff00, transparent);
 }
 
 .grid__bold700 {
